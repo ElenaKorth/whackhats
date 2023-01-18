@@ -1,0 +1,15 @@
+
+body{
+    background: rgb(209,103,226);
+    background: linear-gradient(90deg, rgba(209,103,226,1) 0%, rgba(182,87,232,1) 35%, rgba(148,83,236,1) 68%, rgba(105,82,239,1) 100%);
+}
+
+.navbar{
+    background: rgb(209,103,226);
+    background: linear-gradient(90deg, rgba(209,103,226,1) 0%, rgba(182,87,232,1) 35%, rgba(148,83,236,1) 68%, rgba(105,82,239,1) 100%);
+}
+
+.search-bar{
+        display: inline-block;
+        margin: 0 auto;
+}

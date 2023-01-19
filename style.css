@@ -3,7 +3,12 @@ body{
     background: rgb(209,103,226);
     background: linear-gradient(90deg, rgba(209,103,226,1) 0%, rgba(182,87,232,1) 35%, rgba(148,83,236,1) 68%, rgba(105,82,239,1) 100%);
 }
+.white-space{
+    background-color: white;
+    height: 100px;
+}
 
+/* navbar code */
 .navbar{
     background: rgb(209,103,226);
     background: linear-gradient(90deg, rgba(209,103,226,1) 0%, rgba(182,87,232,1) 35%, rgba(148,83,236,1) 68%, rgba(105,82,239,1) 100%);
@@ -13,3 +18,245 @@ body{
         display: inline-block;
         margin: 0 auto;
 }
+#myInput {
+    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 30%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    margin-bottom: 12px; /* Add some space below the input */
+  }
+  
+  
+*{
+    margin:0;
+    padding:0;
+    font-family:verdana;
+  }
+  #navone{
+    width:100%;
+    /* height:10vh; edit this to change wave legnth */
+    background-size: cover;
+  }
+  nav{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+  }
+  nav ul{
+    float: right;
+    margin-right: 30px;
+  }
+  nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    transition: 0.7s all;
+    color: #fff;
+  }
+  nav ul li:hover{
+    background-color:rgb(182, 62, 238);
+  }
+  nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 30px;
+  }
+  .dropdown-menu {
+    color: #fff;
+    background-color: rgb(182, 62, 238);
+  }
+  .dropdown-item {
+    color: #fff;
+  }
+  /* end of navbar */
+
+  
+
+/* funky button */
+/* 15 */
+#btn-15 {
+    background: #b621fe;
+    border: none;
+    z-index: 1;
+  }
+  #btn-15:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #663dff;
+    border-radius: 5px;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    transition: all 0.3s ease;
+  }
+  #btn-15:hover {
+    color: #fff;
+  }
+  #btn-15:hover:after {
+    left: 0;
+    width: 100%;
+  }
+  #btn-15:active {
+    top: 2px;
+  }
+
+  h1 {
+    position: relative;
+    text-align: center;
+    color: #353535;
+    font-size: 50px;
+    font-family: "Cormorant Garamond", serif;
+  }
+  
+  p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    font-size: 18px;
+    color: #676767;
+  }
+  .frame {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+  }
+  button {
+    margin: 20px;
+  }
+  .custom-btn {
+    width: 130px;
+    height: 40px;
+    color: gold;
+    font-family: 'Modak', cursive;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-weight: 200;
+    font-size: 16px;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+
+  .modak{
+    font-family: 'Modak', cursive;
+    color: gold;
+  }
+
+
+
+  /* GRID STYLING */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    min-height: 100vh;
+    background-color: #1d2630;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+/* hat */
+
+
+
+  /* cards */
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*flying hat  */
+  @-webkit-keyframes fly {
+    0% {
+      top: 0%;
+      left: 0%;
+    }
+    75% {
+      top: 50%;
+      left: 50%;
+    }
+    100% {
+      top: 0%;
+      left: 100%;
+    }
+  }
+  
+  @keyframes fly {
+    0% {
+      top: 0%;
+      left: 0%;
+    }
+    75% {
+      top: 50%;
+      left: 50%;
+    }
+    100% {
+      top: 0%;
+      left: 100%;
+    }
+  }
+  
+  @-webkit-keyframes fly {
+    0% {
+      top: 0%;
+      left: 0%;
+    }
+    75% {
+      top: 50%;
+      left: 50%;
+    }
+    100% {
+      top: 0%;
+      left: 100%;
+    }
+  }
+  
+  @keyframes fly {
+    0% {
+      top: 0%;
+      left: 0%;
+    }
+    75% {
+      top: 50%;
+      left: 50%;
+    }
+    100% {
+      top: 0%;
+      left: 100%;
+    }
+  }
+    
+  #flyinghat {
+    position: absolute;
+      -webkit-animation: fly 5s linear 0s;
+        -moz-animation: fly 5s linear 0s;
+        -0-animation: fly 5s linear 0s;
+    animation: fly 5s linear 0s;
+    }
+  

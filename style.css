@@ -3,6 +3,7 @@ body{
     background: rgb(209,103,226);
     background: linear-gradient(90deg, rgba(209,103,226,1) 0%, rgba(182,87,232,1) 35%, rgba(148,83,236,1) 68%, rgba(105,82,239,1) 100%);
 }
+  
 .white-space{
     background-color: white;
     height: 100px;
@@ -10,16 +11,16 @@ body{
 aside {
   display: block;
 }
-#sectionone {
-  display: flex;
-  flex-direction: row;
-  color: #fff;
-}
+
 h1 {
   font-family:'Modak', cursive;
 }
 h3 {
   font-family: 'Modak', cursive;
+}
+h4 {
+  font-family: 'Modak', cursive;
+  font-style: italic;
 }
 
 /* navbar code */
@@ -95,106 +96,11 @@ h3 {
   
   body {
     min-height: 100vh;
-    background-color: #1d2630;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: flex-start;
   }
-
-/* hat */
-
-
-
-  /* cards */
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /*flying hat  */
-  @-webkit-keyframes fly {
-    0% {
-      top: 0%;
-      left: 0%;
-    }
-    75% {
-      top: 50%;
-      left: 50%;
-    }
-    100% {
-      top: 0%;
-      left: 100%;
-    }
-  }
-  
-  @keyframes fly {
-    0% {
-      top: 0%;
-      left: 0%;
-    }
-    75% {
-      top: 50%;
-      left: 50%;
-    }
-    100% {
-      top: 0%;
-      left: 100%;
-    }
-  }
-  
-  @-webkit-keyframes fly {
-    0% {
-      top: 0%;
-      left: 0%;
-    }
-    75% {
-      top: 50%;
-      left: 50%;
-    }
-    100% {
-      top: 0%;
-      left: 100%;
-    }
-  }
-  
-  @keyframes fly {
-    0% {
-      top: 0%;
-      left: 0%;
-    }
-    75% {
-      top: 50%;
-      left: 50%;
-    }
-    100% {
-      top: 0%;
-      left: 100%;
-    }
-  }
-    
-  #flyinghat {
-    position: absolute;
-      -webkit-animation: fly 5s linear 0s;
-        -moz-animation: fly 5s linear 0s;
-        -0-animation: fly 5s linear 0s;
-    animation: fly 5s linear 0s;
-    }
-  
-
-
-
-
 
 
     /* elena medding with buttons */
@@ -213,3 +119,38 @@ h3 {
     .btn:hover .hover {
       display: inline;
     }
+
+
+
+    /* grid cards */
+
+    .grid { 
+      display: grid;
+      padding-left: 20%;
+      padding-right: 20%;
+      grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+      grid-gap: 150px;
+      align-items:flex-start;
+      padding-bottom: 100px; 
+      }
+    .grid > article {
+      border: 1px solid  rgba(0,0,0,0.3);
+      box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+      background-color: #fff;
+    }
+    .grid > article img {
+      max-width: 100%;
+    }
+    .text {
+      padding: 0 20px 20px;
+    }
+    .text > button {
+      background: aqua;
+      border: 0;
+      color: rgb(0, 0, 0);
+      padding: 10px;
+      width: 100%;
+      font-family: 'Modak', cursive;
+      font-size: larger;
+      }
+

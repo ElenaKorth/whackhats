@@ -154,3 +154,12 @@ h4 {
       font-size: larger;
       }
 
+
+
+
+@media screen and (min-width: 500px) {
+  li{
+      font-size: 20px;
+
+    }
+}

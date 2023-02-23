@@ -407,3 +407,16 @@ a:link {
   height: 200px;
   width: 75px;
 }
+
+
+
+
+
+
+
+
+/* cards please work istg */
+
+.card-pic {
+  object-fit: cover;
+}

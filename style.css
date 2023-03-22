@@ -97,10 +97,12 @@ h4 {
 
 #b-h1{
   font-size: 125px;
+  text-shadow: 2px 4px 4px rgba(26, 27, 27, 0.6);
 }
 
 #and-more{
   font-size: 100px;
+  text-shadow: 2px 4px 4px rgba(26, 27, 27, 0.6);
 }
 
 /* cards */

@@ -114,9 +114,9 @@ h4 {
   height: 325px;
 }
 
-/* .btn-center{
+.btn-center{
   margin-left: 23px;
-} */
+}
 
 a:link {
   text-decoration: none;
@@ -154,7 +154,7 @@ a:link {
 }
 
 .car-center {
-  justify-content: center;
+  justify-content: ;
 }
 
     /* grid cards */
@@ -180,14 +180,13 @@ a:link {
       padding: 0 20px 20px;
     }
     .text > button {
-      /* background: rgb(255, 107, 70); */
-      background: transparent;
+      background: #ff7b0079;
+      border-radius: 10%;
       border: 0;
-      color: rgb(206, 70, 70);
       padding: 15px;
       width: 80%;
       font-family: 'Modak', cursive;
-      font-size: larger;
+      font-size: 115%;
       }
 
       .price-btn {

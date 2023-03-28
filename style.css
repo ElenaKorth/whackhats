@@ -108,7 +108,7 @@ h4 {
 /* cards */
 #rcorners1 {
   border-radius: 25px;
-  background: #ff518b;
+  background: #ff74ba80;
   padding: 20px;
   width: 325px;
   height: 325px;
@@ -149,8 +149,8 @@ a:link {
   background-image: url("https://drive.google.com/uc?export=view&id=1NldvbdfRcjn8Ekf4XZHJOQzUbJ3wrD9W");
   background-repeat: no-repeat; 
   background-repeat: ;
-  background-size: 575px 700px;
-  background-position: center;
+  background-size: 585px 700px;
+  background-position: 80px 80px;
 }
 
 .car-center {
@@ -180,20 +180,22 @@ a:link {
       padding: 0 20px 20px;
     }
     .text > button {
-      background: #ff7b0079;
+      background: rgba(255, 160, 52, 0.644);
       border-radius: 10%;
       border: 0;
       padding: 15px;
       width: 80%;
-      font-family: 'Modak', cursive;
-      font-size: 115%;
+      font-family: 'Modak';
+      font-size: 120%;
       }
 
-      .price-btn {
+
+      #price-btn {
         outline: #fff;
         outline-style: solid;
         outline-width: 1px;
-        border-radius: 10px;  
+        border-radius: 10px; 
+        background-color: #ffffff00; 
       }
 
       .price-a {
@@ -384,3 +386,54 @@ a:link {
 .card-pic {
   object-fit: cover;
 }
+
+
+*{
+  box-sizing: border-box;
+}
+
+
+/* testimonials */
+section{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:white;
+}
+
+
+section .cards{
+  display: flex;
+}
+
+section .cards .text-card{
+  margin: 20px;
+  padding: 20px;
+}
+
+
+@media (max-width: 900px){
+  section h1{
+    font-size: 40px;
+  }
+
+  section .cards{
+    flex-direction: column;
+  }
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+/* carousel */
+

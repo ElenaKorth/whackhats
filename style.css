@@ -21,6 +21,7 @@ aside {
 
 h1 {
   font-family:'Modak', cursive;
+  color:white;
 }
 h3 {
   font-family: 'Modak', cursive;
@@ -108,16 +109,34 @@ h4 {
 /* cards */
 #rcorners1 {
   border-radius: 25px;
-  background: #ff518b;
+  background: #ff74ba80;
   padding: 20px;
   width: 325px;
   height: 325px;
 }
 
-/* .btn-center{
+.btn-center{
   margin-left: 23px;
-} */
+}
 
+#btnScrolltoTop {
+  position: fixed;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #ff74ba80;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  outline:none;
+  border:none;
+  cursor: pointer;
+}
+
+#btnScrolltoTop:active {
+  background-color:#ff74ba80;
+}
 a:link {
   text-decoration: none;
 }
@@ -125,10 +144,6 @@ a:link {
 .card-pic{
   margin-left: 30px;
 }
-
-
-
-
 
 
   /* GRID STYLING */
@@ -149,12 +164,12 @@ a:link {
   background-image: url("https://drive.google.com/uc?export=view&id=1NldvbdfRcjn8Ekf4XZHJOQzUbJ3wrD9W");
   background-repeat: no-repeat; 
   background-repeat: ;
-  background-size: 575px 700px;
-  background-position: center;
+  background-size: 600px 700px;
+  background-position: 250px 80px;
 }
 
 .car-center {
-  justify-content: center;
+  justify-content: ;
 }
 
     /* grid cards */
@@ -176,25 +191,26 @@ a:link {
     .grid > article img {
       max-width: 100%;
     }
-    .text {
+    .texttwo {
       padding: 0 20px 20px;
     }
-    .text > button {
-      /* background: rgb(255, 107, 70); */
-      background: transparent;
+    .texttwo > button {
+      background: rgba(255, 160, 52, 0.644);
+      border-radius: 10%;
       border: 0;
-      color: rgb(206, 70, 70);
       padding: 15px;
       width: 80%;
-      font-family: 'Modak', cursive;
-      font-size: larger;
+      font-family: 'Modak';
+      font-size: 120%;
       }
 
-      .price-btn {
+
+      #price-btn {
         outline: #fff;
         outline-style: solid;
         outline-width: 1px;
-        border-radius: 10px;  
+        border-radius: 10px; 
+        background-color: #ffffff00; 
       }
 
       .price-a {
@@ -384,4 +400,100 @@ a:link {
 
 .card-pic {
   object-fit: cover;
+}
+
+
+*{
+  box-sizing: border-box;
+}
+
+
+/* testimonials */
+section{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:white;
+}
+
+.cards {
+  color:white;
+}
+section .cards{
+  display: flex;
+}
+
+section .cards .text-card{
+  margin: 20px;
+  padding: 20px;
+}
+
+
+@media (max-width: 900px){
+  section h1{
+    font-size: 40px;
+  }
+
+  section .cards{
+    flex-direction: column;
+  }
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+/* carousel */
+
+
+
+.carousel {
+  position: relative;
+  perspective: 100px;
+}
+
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+.text {
+  color: white;
+  background-color: rgb(224, 126, 248);
+  font-size: 18px;
+  padding: 16px 32px;
+  margin-bottom: 160%;
+  font-family: 'Modak', cursive;
 }

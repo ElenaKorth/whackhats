@@ -107,6 +107,7 @@ h4 {
 }
 
 /* cards */
+
 #rcorners1 {
   border-radius: 25px;
   background: #ff74ba80;
@@ -216,16 +217,50 @@ a:link {
       .price-a {
         font-family: 'Dosis', sans-serif;
       }
-
-  
+   
 
 
 .plscenter {
   width: 100%;
 }
 
+/* Image description */
+.container {
+  position: relative;
+}
 
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: inherit;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #ca31e98c;
+  border-radius: 8%;
+  margin-left: 13px;
+}
 
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.textthree {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Close Image description */
 @media screen and (min-width: 500px) {
   li{
       font-size: 20px;
